@@ -1,0 +1,14 @@
+﻿
+/* Individal Edits to the CSS */
+body {
+    text-align: center !important;
+}
+
+button {
+    background: #67b0d1 !important;  
+    color:white !important;
+}
+
+li {
+    list-style-type: none !important;
+}
