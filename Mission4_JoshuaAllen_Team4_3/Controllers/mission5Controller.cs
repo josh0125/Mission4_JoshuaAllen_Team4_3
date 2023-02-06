@@ -13,7 +13,14 @@ namespace Mission4_JoshuaAllen_Team4_3.Controllers
             return View();
         }
 
+        [HttpGet]
         public IActionResult Form()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        public IActionResult Form(object model)
         {
             return View();
         }
