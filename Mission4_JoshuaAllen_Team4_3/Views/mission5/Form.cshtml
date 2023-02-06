@@ -4,7 +4,10 @@
 @{
     ViewData["Title"] = "Form";
 
+
 }
+
+@model FormModel;
 
 <article class="text-center">
 
@@ -19,37 +22,39 @@
                                 <h3 class="mb-4 pb-2 pb-md-0 mb-md-5 px-md-2">Find Grades</h3>
                                 <form method="post">
                                     <div class="form-outline mb-4">
-                                        <input id="assignment" name="assignment" type="text" class="form-control" />
+                                        <input id="assignment" asp-for="assignment" type="text" class="form-control" />
                                         <label for="assignment" class="form-label">Assignments</label>
                                     </div>
 
                                     <div class="form-outline mb-4">
-                                        <input id="gproject" name="gproject" type="text" class="form-control" />
+                                        <input id="gproject" asp-for="gproject" type="text" class="form-control" />
                                         <label for="gproject" class="form-label">Group Project</label>
                                     </div>
 
                                     <div class="form-outline mb-4">
-                                        <input id="quizzes" name="quizzes" type="text" class="form-control" />
+                                        <input id="quizzes" asp-for="quizzes" type="text" class="form-control" />
                                         <label for="quizzes" class="form-label">Quizzes</label>
                                     </div>
 
                                     <div class="form-outline mb-4">
-                                        <input id="midterm" name="midterm" type="text" class="form-control" />
+                                        <input id="midterm" asp-for="midterm" type="text" class="form-control" />
                                         <label for="midterm" class="form-label">Midterm Exam</label>
                                     </div>
 
                                     <div class="form-outline mb-4">
-                                        <input id="final" name="final" type="text" class="form-control" />
+                                        <input id="final" asp-for="final" type="text" class="form-control" />
                                         <label for="final" class="form-label">Final Exam</label>
                                     </div>
 
                                     <div class="form-outline mb-4">
-                                        <input id="intex" name="intex" type="text" class="form-control" />
+                                        <input id="intex" asp-for="intex" type="text" class="form-control" />
                                         <label for="intex" class="form-label">INTEX</label>
                                     </div>
 
                                     <button id="buttomSub" type="submit" class="btn btn-lg mb-1">Submit</button>
                                 </form>
+
+                                <div asp-validation-summary="All"></div>
                             </div>
                         </div>
                     </div>
@@ -62,4 +67,3 @@
     <p id="results" style="padding-bottom:50px"></p>
 </article>
 
-<script src="~/js/JavaScript.js"></script>

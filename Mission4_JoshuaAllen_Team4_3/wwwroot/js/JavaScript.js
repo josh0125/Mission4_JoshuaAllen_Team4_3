@@ -42,5 +42,6 @@ $("#buttomSub").click(function () {
         grade = 'E';
 
     // Displaying results to empty paragraph on DOM
-    $('#results').text('Numeric Grade: ' + total + '%\nLetter Grade: ' + grade)
+    //$('#results').text('Numeric Grade: ' + total + '%\nLetter Grade: ' + grade);
+    alert('Numeric Grade: ' + total + '%\nLetter Grade: ' + grade);
 })

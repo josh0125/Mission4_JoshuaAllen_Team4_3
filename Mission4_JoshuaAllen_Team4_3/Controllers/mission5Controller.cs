@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Mission4_JoshuaAllen_Team4_3.Model;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -20,7 +21,7 @@ namespace Mission4_JoshuaAllen_Team4_3.Controllers
         }
 
         [HttpPost]
-        public IActionResult Form(object model)
+        public IActionResult Form(FormModel model)
         {
             return View();
         }
